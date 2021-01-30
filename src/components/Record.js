@@ -31,36 +31,21 @@ const Record = () => {
 
   const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));
 
-  let timeToSleep = 0;
-
-  const handleChange = (e) => {
-    let timeToSleepGiven = e.target.value * 1000;
-    return (timeToSleep = timeToSleepGiven);
-  };
-
   const handleAction = async () => {
     const recorder = await recordAudio();
-    const actionButton = document.getElementById("action");
-    actionButton.disabled = true;
     recorder.start();
-    console.log(timeToSleep);
-    await sleep(timeToSleep);
+    await sleep(10000);
     const audio = await recorder.stop();
     audio.play();
-    await sleep(timeToSleep);
-    actionButton.disabled = false;
   };
 
   return (
     <div className='recSection'>
       <h3>Record Your Own Jam!</h3>
       <p>
-        Just choose the record time (3-20 seconds) and click the record button.
+        The rocording is set to 10 seconds and after you are done, your
+        recording will be played automatically!
       </p>
-      <p>After you are done, your recording will be played automatically!</p>
-      <div>
-        <input type='number' min='3' max='20' onChange={handleChange} />
-      </div>
       <div>
         <button>
           <img
