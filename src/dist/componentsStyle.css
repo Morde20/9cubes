@@ -73,15 +73,6 @@ body .container .cube0, body .container .cube1, body .container .cube2, body .co
   margin-top: 5px;
   animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-@media only screen and (max-width: 300px) {
-  body .container .cube0 .container, body .container .cube1 .container, body .container .cube2 .container, body .container .cube3 .container, body .container .cube4 .container, body .container .cube5 .container, body .container .cube6 .container, body .container .cube7 .container, body .container .cube8 .container {
-    max-width: 350;
-  }
-  body .container .cube0 .container .cube0, body .container .cube0 .container .cube1, body .container .cube0 .container .cube2, body .container .cube0 .container .cube3, body .container .cube0 .container .cube4, body .container .cube0 .container .cube5, body .container .cube0 .container .cube6, body .container .cube0 .container .cube7, body .container .cube0 .container .cube8, body .container .cube1 .container .cube0, body .container .cube1 .container .cube1, body .container .cube1 .container .cube2, body .container .cube1 .container .cube3, body .container .cube1 .container .cube4, body .container .cube1 .container .cube5, body .container .cube1 .container .cube6, body .container .cube1 .container .cube7, body .container .cube1 .container .cube8, body .container .cube2 .container .cube0, body .container .cube2 .container .cube1, body .container .cube2 .container .cube2, body .container .cube2 .container .cube3, body .container .cube2 .container .cube4, body .container .cube2 .container .cube5, body .container .cube2 .container .cube6, body .container .cube2 .container .cube7, body .container .cube2 .container .cube8, body .container .cube3 .container .cube0, body .container .cube3 .container .cube1, body .container .cube3 .container .cube2, body .container .cube3 .container .cube3, body .container .cube3 .container .cube4, body .container .cube3 .container .cube5, body .container .cube3 .container .cube6, body .container .cube3 .container .cube7, body .container .cube3 .container .cube8, body .container .cube4 .container .cube0, body .container .cube4 .container .cube1, body .container .cube4 .container .cube2, body .container .cube4 .container .cube3, body .container .cube4 .container .cube4, body .container .cube4 .container .cube5, body .container .cube4 .container .cube6, body .container .cube4 .container .cube7, body .container .cube4 .container .cube8, body .container .cube5 .container .cube0, body .container .cube5 .container .cube1, body .container .cube5 .container .cube2, body .container .cube5 .container .cube3, body .container .cube5 .container .cube4, body .container .cube5 .container .cube5, body .container .cube5 .container .cube6, body .container .cube5 .container .cube7, body .container .cube5 .container .cube8, body .container .cube6 .container .cube0, body .container .cube6 .container .cube1, body .container .cube6 .container .cube2, body .container .cube6 .container .cube3, body .container .cube6 .container .cube4, body .container .cube6 .container .cube5, body .container .cube6 .container .cube6, body .container .cube6 .container .cube7, body .container .cube6 .container .cube8, body .container .cube7 .container .cube0, body .container .cube7 .container .cube1, body .container .cube7 .container .cube2, body .container .cube7 .container .cube3, body .container .cube7 .container .cube4, body .container .cube7 .container .cube5, body .container .cube7 .container .cube6, body .container .cube7 .container .cube7, body .container .cube7 .container .cube8, body .container .cube8 .container .cube0, body .container .cube8 .container .cube1, body .container .cube8 .container .cube2, body .container .cube8 .container .cube3, body .container .cube8 .container .cube4, body .container .cube8 .container .cube5, body .container .cube8 .container .cube6, body .container .cube8 .container .cube7, body .container .cube8 .container .cube8 {
-    height: 120px;
-    width: 120px;
-  }
-}
 @keyframes shadow-drop-2-center {
   0% {
     -webkit-transform: translateZ(0);
@@ -128,9 +119,6 @@ body .container .cube0 .switch, body .container .cube1 .switch, body .container 
   margin-bottom: 25px;
   animation: swirl-in-fwd 0.6s ease-out both;
 }
-body .container .cube0 .switch:hover, body .container .cube1 .switch:hover, body .container .cube2 .switch:hover, body .container .cube3 .switch:hover, body .container .cube4 .switch:hover, body .container .cube5 .switch:hover, body .container .cube6 .switch:hover, body .container .cube7 .switch:hover, body .container .cube8 .switch:hover {
-  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 @keyframes swirl-in-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -172,16 +160,6 @@ body .container .cube0 .slider:before, body .container .cube1 .slider:before, bo
 }
 body .container .cube0 input:checked + .slider, body .container .cube1 input:checked + .slider, body .container .cube2 input:checked + .slider, body .container .cube3 input:checked + .slider, body .container .cube4 input:checked + .slider, body .container .cube5 input:checked + .slider, body .container .cube6 input:checked + .slider, body .container .cube7 input:checked + .slider, body .container .cube8 input:checked + .slider {
   background-color: #229147;
-}
-@keyframes slide-fwd-center {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  100% {
-    -webkit-transform: translateZ(160px);
-    transform: translateZ(160px);
-  }
 }
 body .container .cube0 input:focus + .slider, body .container .cube1 input:focus + .slider, body .container .cube2 input:focus + .slider, body .container .cube3 input:focus + .slider, body .container .cube4 input:focus + .slider, body .container .cube5 input:focus + .slider, body .container .cube6 input:focus + .slider, body .container .cube7 input:focus + .slider, body .container .cube8 input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
@@ -227,6 +205,14 @@ body .recSection #action:hover {
 }
 @keyframes slidebg {
   to {
-    background-position: 18vw;
+    background-position: 20vw;
+  }
+}
+@media only screen and (min-width: 430px) {
+  body .container {
+    max-width: 340px;
+  }
+  body .container .cube0, body .container .cube1, body .container .cube2, body .container .cube3, body .container .cube4, body .container .cube5, body .container .cube6, body .container .cube7, body .container .cube8 {
+    width: 110px;
   }
 }
