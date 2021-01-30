@@ -208,11 +208,11 @@ body .recSection #action:hover {
     background-position: 20vw;
   }
 }
-@media only screen and (min-width: 430px) {
+@media only screen and (max-width: 600px) {
   body .container {
     max-width: 340px;
   }
   body .container .cube0, body .container .cube1, body .container .cube2, body .container .cube3, body .container .cube4, body .container .cube5, body .container .cube6, body .container .cube7, body .container .cube8 {
-    width: 110px;
+    max-width: 110px;
   }
 }

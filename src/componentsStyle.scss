@@ -268,12 +268,12 @@ body{
     }
 
 
-    @media only screen and (min-width: 430px) {
+    @media only screen and (max-width: 600px) {
       .container{
         max-width: 340px;
 
         .cube0,.cube1,.cube2,.cube3,.cube4,.cube5,.cube6,.cube7,.cube8{
-          width: 110px;
+          max-width: 110px;
         }
 
       }
