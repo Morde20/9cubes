@@ -178,3 +178,11 @@ body .container .cube0 .slider.round, body .container .cube1 .slider.round, body
 body .container .cube0 .slider.round:before, body .container .cube1 .slider.round:before, body .container .cube2 .slider.round:before, body .container .cube3 .slider.round:before, body .container .cube4 .slider.round:before, body .container .cube5 .slider.round:before, body .container .cube6 .slider.round:before, body .container .cube7 .slider.round:before, body .container .cube8 .slider.round:before {
   border-radius: 50%;
 }
+@media only screen and (max-width: 600px) {
+  body .container {
+    max-width: 340px;
+  }
+  body .container .cube0, body .container .cube1, body .container .cube2, body .container .cube3, body .container .cube4, body .container .cube5, body .container .cube6, body .container .cube7, body .container .cube8 {
+    max-width: 110px;
+  }
+}
