@@ -94,6 +94,7 @@ const Body = () => {
           onClick={handleAudioToggle}
           alt='playBtn'
         />
+
         <img
           id='pauseBtn'
           src='img/pause.png'
