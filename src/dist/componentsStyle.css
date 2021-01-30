@@ -1,0 +1,223 @@
+body {
+  background-image: url("../background.jpg");
+  text-align: center;
+}
+body h1, body h2, body h3, body p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+body .loopControls {
+  max-width: 450px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+body .loopControls img {
+  padding: 3px;
+}
+body .loopControls img:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+body .container {
+  max-width: 430px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: auto;
+}
+body .container .cube0 {
+  background: linear-gradient(to right, #e1eec3, #f05053);
+}
+body .container .cube1 {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+body .container .cube2 {
+  background: linear-gradient(to right, #b2fefa, #0ed2f7);
+}
+body .container .cube3 {
+  background: linear-gradient(to right, #108dc7, #ef8e38);
+}
+body .container .cube4 {
+  background: linear-gradient(to right, #f0f2f0, #000c40);
+}
+body .container .cube5 {
+  background: linear-gradient(to right, #23074d, #cc5333);
+}
+body .container .cube6 {
+  background: linear-gradient(to right, #fc4a1a, #f7b733);
+}
+body .container .cube7 {
+  background: linear-gradient(to right, #22c1c3, #fdbb2d);
+}
+body .container .cube8 {
+  background: linear-gradient(to right, #c33764, #1d2671);
+}
+body .container .cube0, body .container .cube1, body .container .cube2, body .container .cube3, body .container .cube4, body .container .cube5, body .container .cube6, body .container .cube7, body .container .cube8 {
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 10px;
+  margin-top: 5px;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+body .container .cube0 p, body .container .cube1 p, body .container .cube2 p, body .container .cube3 p, body .container .cube4 p, body .container .cube5 p, body .container .cube6 p, body .container .cube7 p, body .container .cube8 p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  color: white;
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+body .container .cube0 .switch, body .container .cube1 .switch, body .container .cube2 .switch, body .container .cube3 .switch, body .container .cube4 .switch, body .container .cube5 .switch, body .container .cube6 .switch, body .container .cube7 .switch, body .container .cube8 .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: auto;
+  grid-row: 3;
+  margin-bottom: 25px;
+  animation: swirl-in-fwd 0.6s ease-out both;
+}
+body .container .cube0 .switch:hover, body .container .cube1 .switch:hover, body .container .cube2 .switch:hover, body .container .cube3 .switch:hover, body .container .cube4 .switch:hover, body .container .cube5 .switch:hover, body .container .cube6 .switch:hover, body .container .cube7 .switch:hover, body .container .cube8 .switch:hover {
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+body .container .cube0 .switch input, body .container .cube1 .switch input, body .container .cube2 .switch input, body .container .cube3 .switch input, body .container .cube4 .switch input, body .container .cube5 .switch input, body .container .cube6 .switch input, body .container .cube7 .switch input, body .container .cube8 .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+body .container .cube0 .slider, body .container .cube1 .slider, body .container .cube2 .slider, body .container .cube3 .slider, body .container .cube4 .slider, body .container .cube5 .slider, body .container .cube6 .slider, body .container .cube7 .slider, body .container .cube8 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+body .container .cube0 .slider:before, body .container .cube1 .slider:before, body .container .cube2 .slider:before, body .container .cube3 .slider:before, body .container .cube4 .slider:before, body .container .cube5 .slider:before, body .container .cube6 .slider:before, body .container .cube7 .slider:before, body .container .cube8 .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+body .container .cube0 input:checked + .slider, body .container .cube1 input:checked + .slider, body .container .cube2 input:checked + .slider, body .container .cube3 input:checked + .slider, body .container .cube4 input:checked + .slider, body .container .cube5 input:checked + .slider, body .container .cube6 input:checked + .slider, body .container .cube7 input:checked + .slider, body .container .cube8 input:checked + .slider {
+  background-color: #229147;
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
+}
+body .container .cube0 input:focus + .slider, body .container .cube1 input:focus + .slider, body .container .cube2 input:focus + .slider, body .container .cube3 input:focus + .slider, body .container .cube4 input:focus + .slider, body .container .cube5 input:focus + .slider, body .container .cube6 input:focus + .slider, body .container .cube7 input:focus + .slider, body .container .cube8 input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+body .container .cube0 input:checked + .slider:before, body .container .cube1 input:checked + .slider:before, body .container .cube2 input:checked + .slider:before, body .container .cube3 input:checked + .slider:before, body .container .cube4 input:checked + .slider:before, body .container .cube5 input:checked + .slider:before, body .container .cube6 input:checked + .slider:before, body .container .cube7 input:checked + .slider:before, body .container .cube8 input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+body .container .cube0 .slider.round, body .container .cube1 .slider.round, body .container .cube2 .slider.round, body .container .cube3 .slider.round, body .container .cube4 .slider.round, body .container .cube5 .slider.round, body .container .cube6 .slider.round, body .container .cube7 .slider.round, body .container .cube8 .slider.round {
+  border-radius: 34px;
+}
+body .container .cube0 .slider.round:before, body .container .cube1 .slider.round:before, body .container .cube2 .slider.round:before, body .container .cube3 .slider.round:before, body .container .cube4 .slider.round:before, body .container .cube5 .slider.round:before, body .container .cube6 .slider.round:before, body .container .cube7 .slider.round:before, body .container .cube8 .slider.round:before {
+  border-radius: 50%;
+}
+body .recSection {
+  background: linear-gradient(to right, #373b44, #4286f4);
+  margin-bottom: 50px;
+  padding: 5px;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  color: white;
+}
+body .recSection input {
+  height: 30px;
+  border-radius: 5px;
+}
+body .recSection button {
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+body .recSection div {
+  margin-top: 10px;
+}
+body .recSection #action:hover {
+  background-image: linear-gradient(to right, #E7484F, #E7484F 16.65%, #F68B1D 16.65%, #F68B1D 33.3%, #FCED00 33.3%, #FCED00 49.95%, #009E4F 49.95%, #009E4F 66.6%, #00AAC3 66.6%, #00AAC3 83.25%, #732982 83.25%, #732982 100%, #E7484F 100%);
+  color: black;
+  animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 18vw;
+  }
+}
