@@ -86,6 +86,19 @@ body{
             margin-top: 5px;
             animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
+            @media only screen and (max-width: 300px) {
+              .container{
+                max-width: 350;
+
+                .cube0,.cube1,.cube2,.cube3,.cube4,.cube5,.cube6,.cube7,.cube8{
+                  height: 120px;
+                  width: 120px;
+                }
+
+              }
+
+            }
+
 
             @keyframes shadow-drop-2-center {
                 0% {
